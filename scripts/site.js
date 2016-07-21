@@ -1,0 +1,5 @@
+!function(){"use strict";angular.module("embassyApp",["app.routes","article"]).constant("CONFIG",{BASE:"https://indian-embassy-news.herokuapp.com",BASE_API:"https://indian-embassy-news.herokuapp.com/api"})}();
+!function(){angular.module("app.routes",["ui.router"]).config(["$stateProvider","$urlRouterProvider",function(e,r){e.state("home",{url:"/",templateUrl:"views/article/home.html",controller:"articleHomeController",controllerAs:"articleHomeCtrl"}),r.otherwise("/")}])}();
+!function(){"use strict";angular.module("article",["article.controllers","article.services"]),angular.module("article.controllers",[]),angular.module("article.services",[])}();
+!function(){"use strict";function o(o){var l=this;l.loading=!0,o.all().success(function(o){console.log(o),l.articles=o,l.loading=!1}).error(function(o){console.log(o)})}angular.module("article.controllers").controller("articleHomeController",o),o.$inject=["Article"]}();
+!function(){"use strict";function t(t,r){function e(){return r.get(t.BASE_API+"/articles")}var c={all:e};return c}angular.module("article.services").factory("Article",t),t.$inject=["CONFIG","$http"]}();
