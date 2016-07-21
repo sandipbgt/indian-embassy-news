@@ -1,0 +1,21 @@
+{
+  "name": "indian-embassy",
+  "version": "1.0.0",
+  "description": "Indian embassy news app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandip Bhagat",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-uglify": "*",
+    "gulp-usemin": "*",
+    "run-sequence": "*"
+  }
+}

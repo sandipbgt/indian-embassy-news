@@ -1,0 +1,26 @@
+{
+  "name": "indian-embassy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sandip Bhagat"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15"
+  }
+}
